@@ -1,0 +1,23 @@
+.dealer__headerLink {
+  display: flex;
+  align-items: center;
+}
+
+
+.dealer__headerLink--fone,
+.dealer__headerLink--whats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.dealer__headerLink--whats {
+  background-color: rgb(47, 182, 65);
+}
+
+.dealer__headerLink--fone {
+  background-color: #ff1430;
+}

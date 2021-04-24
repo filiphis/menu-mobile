@@ -1,0 +1,68 @@
+.dealer__subMenuLink {
+    color: $menu-LinkColor;
+    font-size: $menu-LinkFontSize;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.dealer__subMenuItem {
+    width: 90%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $menu-LinkSeparatorColor;
+    margin-left: 10%;
+}
+
+.subMenuArrow__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 54px;
+}
+
+.subMenuArrow {
+    color: $subMenu-arrowColor;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 12px;
+    height: 12px;
+    padding: 10px;
+    background-image: url("/assets/images/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: transform linear 0.25s;
+    background-color: inherit;
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+.mostraSubMenu .subMenuArrow {
+    transform: rotateX(180deg);
+}
+
+// Classes para mostrar/esconder
+
+.dealer__menuItem--subMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.dealer__menuItem--subMenu.mostraSubMenu {
+    border-bottom: none;
+    display: block;
+}
+
+.dealer__subMenuList {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height linear 0.25s;
+}
+
+.dealer__menuItem--subMenu.mostraSubMenu .dealer__subMenuList {
+    height: 160px;
+}

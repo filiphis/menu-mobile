@@ -1,0 +1,20 @@
+.dealer__menuLink {
+    color: $menu-LinkColor;
+    font-size: $menu-LinkFontSize;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &--novo::after {
+        content: "novo";
+        font-size: $menu-LinkTagsFontSize;
+        margin-left: 1.5rem;
+        display: inline-block;
+        background-color: $menu-LinkTagsBgcolor;
+        width: 40px;
+        height: 20px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 6px;
+        line-height: 1.8;
+    }
+}

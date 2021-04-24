@@ -1,0 +1,10 @@
+.dealer__btnMenu {
+    border-radius: 0;
+    border: none;
+    outline: none;
+    background-image: url("/assets/images/dealer-menu.svg");
+    width: 20px;
+    height: 14px;
+    text-indent: -9999px;
+    background-color: $header-BackgroundColor;
+}

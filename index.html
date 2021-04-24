@@ -5,19 +5,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Menu mobile</title>
+
+  <!-- <link rel="stylesheet" href="assets/scss/reset.scss"> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+
 </head>
 
 <body>
-  <nav>
-    <a class="btnMenu btnMenu--open" href="">Menu</a>
-    <ul class="menu">
-      <li class="tnMenu btnMenu--close">Sair</li>
-      <li class="menu__item"><a href="" class="menu__item--action"></a></li>
-      <li class="menu__item"><a href="" class="menu__item--action"></a></li>
-      <li class="menu__item"><a href="" class="menu__item--action"></a></li>
-    </ul>
-  </nav>
+
+  <header class="dealer__header">
+    <nav class="dealer__nav">
+      <button class="dealer__btnMenu" href="#" aria-label="Mostra ou esconde o menu">Menu</button>
+      <a class="dealer__headerLink dealer__headerLink--logo" href="index.html">
+        <img class="dealer__headerImage" src="assets/images/dealer-logo.svg" alt="Logo">
+      </a>
+      <a class="dealer__headerLink dealer__headerLink--fone" href="#"><img class="dealer__headerImage dealer__headerImage" src="assets/images/icon-fone.svg" alt="contato telefone"></a>
+      <a class="dealer__headerLink dealer__headerLink--whats" href="#"><img class="dealer__headerImage" src="assets/images/icon-whats.svg" alt="contato whatsapp"></a>
+      <a class="dealer__headerLink" href="#"><img class="dealer__headerImage" src="assets/images/icon-fiat.svg" alt="link para fiat"></a>
+    </nav>
+
+    <nav class="dealer__menu">
+      <ul class="dealer__menuList">
+        <li data-teste class="dealer__menuItem dealer__menuItem--subMenu">
+          <div class="subMenuArrow__wrap">
+            <a href="#" class="dealer__menuLink">Institucional</a>
+            <button href="#" class="subMenuArrow" aria-label="Mostra ou esconde submenu">Mostra sub menu</button>
+          </div>
+          <ul class="dealer__subMenuList">
+            <li class="dealer__subMenuItem"><a class="dealer__subMenuLink" href="#">Quem somos</a></li>
+            <li class="dealer__subMenuItem"><a class="dealer__subMenuLink" href="#">Fale conosco</a></li>
+            <li class="dealer__subMenuItem"><a class="dealer__subMenuLink" href="#">Endereços</a></li>
+
+          </ul>
+        </li>
+        <li class="dealer__menuItem">
+          <a href="#" class="dealer__menuLink">Novos</a>
+        </li>
+        <li class="dealer__menuItem">
+          <a href="#" class="dealer__menuLink">Ofertas</a>
+        </li>
+        <li class="dealer__menuItem">
+          <a href="#" class="dealer__menuLink">Seminovos</a>
+        </li>
+        <li class="dealer__menuItem">
+          <a href="#" class="dealer__menuLink dealer__menuLink--novo">Consórcio</a>
+        </li>
+        <li class="dealer__menuItem">
+          <a href="#" class="dealer__menuLink">Vendas direta</a>
+        </li>
+        <li class="dealer__menuItem">
+          <a href="#" class="dealer__menuLink">Lifestyle</a>
+        </li>
+        <li class="dealer__menuItem">
+          <a href="#" class="dealer__menuLink">Pós-vendas</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <script src="assets/js/menu.js"></script>
+
 </body>
 
 </html>
